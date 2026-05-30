@@ -146,8 +146,7 @@ st.markdown("""
 <div class="ace-header">
     <div class="ace-logo">♠ACE</div>
     <div class="ace-subtitle">Accumulation Computation Engine</div>
-    <div class="ace-badge">ACE 4 — H1 RANDOM CONSOLIDATION BREAKOUT</div>
-</div>
+   </div>
 """, unsafe_allow_html=True)
 
 # ── Timing Note ────────────────────────────────────────────────────────────────
