@@ -148,12 +148,6 @@ st.markdown("""
     <div class="ace-subtitle">Accumulation Computation Engine</div>
 """, unsafe_allow_html=True)
 
-# ── Timing Note ────────────────────────────────────────────────────────────────
-st.markdown("""
-<div class="timing-note">
-    ⏱ RUN AT 10:31AM ET · 9:30AM CANDLE FULLY CLOSED AT 10:30AM · PREVIOUS TRADING DAY LOOKBACK (7 HOURLY CANDLES)
-</div>
-""", unsafe_allow_html=True)
 
 # ── TSX Symbol List ────────────────────────────────────────────────────────────
 def get_tsx_symbols():
