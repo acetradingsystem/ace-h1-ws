@@ -413,7 +413,8 @@ def display_results(results):
         </div>""", unsafe_allow_html=True)
 
 # ── Main Layout ────────────────────────────────────────────────────────────────
-st.markdown('<div class="section-header">H1 RANDOM CONSOLIDATION BREAKOUT — TSX HOURLY — LONG SETUPS ONLY — CONSOLIDATION &lt; 5%</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-header">TSX - WIDE STATE SCANNER - HOURLY TIMEFRAME
+</div>', unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
