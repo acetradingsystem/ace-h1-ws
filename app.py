@@ -126,19 +126,7 @@ st.markdown("""
 .elephant-label { color: #FFD700; font-size: 0.78rem; font-family: 'Space Mono', monospace; font-size: 0.7rem; letter-spacing: 0.3em; margin-bottom: 1rem; }
 .regular-label  { color: #ff8c00; font-family: 'Space Mono', monospace; font-size: 0.7rem; letter-spacing: 0.3em; margin-bottom: 1rem; margin-top: 1.5rem; }
 
-.timing-note {
-    background: rgba(255,140,0,0.08);
-    border: 1px solid #ff8c0044;
-    border-radius: 6px;
-    padding: 0.6rem 1rem;
-    text-align: center;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    color: #ff8c00;
-    margin-bottom: 1.5rem;
-}
-</style>
+
 """, unsafe_allow_html=True)
 
 # ── Header ─────────────────────────────────────────────────────────────────────
