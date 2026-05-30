@@ -434,7 +434,7 @@ else:
         CLICK RUN H1 TSX SCAN TO START<br><br>
        Elephant Bar: body larger than 70th percentile of last 20 hourly bars<br>
         MA20 slope ≤ 1.0% (flat or declining daily MA20)<br><br>
-        Best run at 10:31am ET on trading days · Exit ~3:00pm ET
+        Best run at 10:31am ET on trading days
     </div>""", unsafe_allow_html=True)
 
 # ── Footer ─────────────────────────────────────────────────────────────────────
