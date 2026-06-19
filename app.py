@@ -6,7 +6,7 @@ import requests
 
 # ── Page Config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="ACE Trading System — ACE 4 H1 RCB",
+    page_title="ACE-H1-ws",
     page_icon="♠",
     layout="wide",
     initial_sidebar_state="collapsed"
