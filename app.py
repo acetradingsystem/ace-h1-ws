@@ -357,20 +357,16 @@ def display_results(results):
                     <span class="coin-name">🐘 {r['symbol']}</span>
                     {score_badge(r['score'])}
                 </div>
-                <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0.8rem">
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.8rem;margin-bottom:0.8rem">
                     <div><div class="metric-label">Price CAD</div><div class="metric-value">${r['close']:,.2f}</div></div>
-                    <div><div class="metric-label">EB Strength</div><div class="metric-value metric-gold">{int(r['eb_pct'])}%ile</div></div>
-                    <div><div class="metric-label">Body %</div><div class="metric-value metric-green">{r['body_pct']}%</div></div>
+                    <div><div class="metric-label">EB Strength</div><div class="metric-value metric-gold">{int(r['eb_pct'])}%</div></div>
                     <div><div class="metric-label">Close Pos</div><div class="metric-value">{r['close_pos']}%</div></div>
                     <div><div class="metric-label">Breakout</div><div class="metric-value metric-green">+{r['breakout_pct']}%</div></div>
-                    <div><div class="metric-label">Volume</div><div class="metric-value">{r['volume']:,}</div></div>
                 </div>
-                <div style="margin-top:0.8rem;display:grid;grid-template-columns:repeat(5,1fr);gap:0.8rem">
-                    <div><div class="metric-label">Prev Day High</div><div class="metric-value">${r['prev_high']}</div></div>
-                    <div><div class="metric-label">Prev Day Low</div><div class="metric-value">${r['prev_low']}</div></div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.8rem">
                     <div><div class="metric-label">MA20 (D)</div><div class="metric-value">${r['ma20']}</div></div>
                     <div><div class="metric-label">MA20 Slope</div><div class="metric-value metric-gold">{r['ma20_slope']}%</div></div>
-                    <div><div class="metric-label">N·E·B·P</div><div class="metric-value">{r['n']}·{r['e']}·{r['b']}·{r['p']}</div></div>
+                    <div><div class="metric-label">Volume</div><div class="metric-value">{r['volume']:,}</div></div>
                 </div>
             </div>""", unsafe_allow_html=True)
     else:
@@ -386,20 +382,16 @@ def display_results(results):
                     <span class="coin-name">{r['symbol']}</span>
                     {score_badge(r['score'])}
                 </div>
-                <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0.8rem">
+                <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.8rem;margin-bottom:0.8rem">
                     <div><div class="metric-label">Price CAD</div><div class="metric-value">${r['close']:,.2f}</div></div>
-                    <div><div class="metric-label">EB Strength</div><div class="metric-value">{int(r['eb_pct'])}%ile</div></div>
-                    <div><div class="metric-label">Body %</div><div class="metric-value">{r['body_pct']}%</div></div>
+                    <div><div class="metric-label">EB Strength</div><div class="metric-value">{int(r['eb_pct'])}%</div></div>
                     <div><div class="metric-label">Close Pos</div><div class="metric-value">{r['close_pos']}%</div></div>
                     <div><div class="metric-label">Breakout</div><div class="metric-value">+{r['breakout_pct']}%</div></div>
-                    <div><div class="metric-label">Volume</div><div class="metric-value">{r['volume']:,}</div></div>
                 </div>
-                <div style="margin-top:0.8rem;display:grid;grid-template-columns:repeat(5,1fr);gap:0.8rem">
-                    <div><div class="metric-label">Prev Day High</div><div class="metric-value">${r['prev_high']}</div></div>
-                    <div><div class="metric-label">Prev Day Low</div><div class="metric-value">${r['prev_low']}</div></div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.8rem">
                     <div><div class="metric-label">MA20 (D)</div><div class="metric-value">${r['ma20']}</div></div>
                     <div><div class="metric-label">MA20 Slope</div><div class="metric-value">{r['ma20_slope']}%</div></div>
-                    <div><div class="metric-label">N·E·B·P</div><div class="metric-value">{r['n']}·{r['e']}·{r['b']}·{r['p']}</div></div>
+                    <div><div class="metric-label">Volume</div><div class="metric-value">{r['volume']:,}</div></div>
                 </div>
             </div>""", unsafe_allow_html=True)
 
@@ -423,7 +415,7 @@ if run:
     with st.spinner(""):
         results = run_h1_scan()
         st.session_state["h1_results"] = results
-        st.session_state["h1_time"]    = datetime.now().strftime("%Y-%m-%d %H:%M ET")
+        st.session_state["h1_time"]    = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
 
 if "h1_results" in st.session_state:
     st.markdown(f'<div class="timestamp">Last scan: {st.session_state["h1_time"]}</div>', unsafe_allow_html=True)
