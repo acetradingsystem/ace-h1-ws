@@ -359,7 +359,7 @@ def display_results(results):
                 </div>
                 <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0.8rem">
                     <div><div class="metric-label">Price CAD</div><div class="metric-value">${r['close']:,.2f}</div></div>
-                    <div><div class="metric-label">EB Strength</div><div class="metric-value metric-gold">{r['eb_pct']}%ile</div></div>
+                    <div><div class="metric-label">EB Strength</div><div class="metric-value metric-gold">{int(r['eb_pct'])}%ile</div></div>
                     <div><div class="metric-label">Body %</div><div class="metric-value metric-green">{r['body_pct']}%</div></div>
                     <div><div class="metric-label">Close Pos</div><div class="metric-value">{r['close_pos']}%</div></div>
                     <div><div class="metric-label">Breakout</div><div class="metric-value metric-green">+{r['breakout_pct']}%</div></div>
@@ -388,7 +388,7 @@ def display_results(results):
                 </div>
                 <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0.8rem">
                     <div><div class="metric-label">Price CAD</div><div class="metric-value">${r['close']:,.2f}</div></div>
-                    <div><div class="metric-label">EB Strength</div><div class="metric-value">{r['eb_pct']}%ile</div></div>
+                    <div><div class="metric-label">EB Strength</div><div class="metric-value">{int(r['eb_pct'])}%ile</div></div>
                     <div><div class="metric-label">Body %</div><div class="metric-value">{r['body_pct']}%</div></div>
                     <div><div class="metric-label">Close Pos</div><div class="metric-value">{r['close_pos']}%</div></div>
                     <div><div class="metric-label">Breakout</div><div class="metric-value">+{r['breakout_pct']}%</div></div>
